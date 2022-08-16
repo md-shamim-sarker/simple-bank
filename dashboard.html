@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo.svg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Present Status</title>
+</head>
+
+<body class="w-screen h-screen flex justify-center items-center p-5">
+    <section class="bg-blue-200 w-screen md:w-screen lg:w-2/3 mx-auto p-10 flex flex-col rounded-2xl shadow-lg">
+        <div class="flex flex-col items-center">
+            <img src="./image/logo.svg" alt="logo" class="w-20">
+            <h1 class="text-3xl font-bold text-center">Present Status</h1>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row mt-10 gap-5">
+            <div
+                class="bg-violet-500 w-full lg:w-1/3 p-5 rounded-lg text-center text-2xl md:text-lg font-bold text-red-50">
+                <h2>Deposit</h2>
+                <h2>$<span id="deposit">000</span></h2>
+            </div>
+            <div
+                class="bg-blue-500 w-full lg:w-1/3 p-5 rounded-lg text-center text-2xl md:text-lg font-bold text-blue-50">
+                <h2>Withdraw</h2>
+                <h2>$<span id="withdraw">000</span></h2>
+            </div>
+            <div
+                class="bg-green-500 w-full lg:w-1/3 p-5 rounded-lg text-center text-2xl md:text-lg font-bold text-violet-50">
+                <h2>Balance</h2>
+                <h2>$<span id="balance">1200</span></h2>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row gap-5 mt-5 text-black">
+            <div class="bg-blue-300 p-5 rounded-lg text-center text-2xl md:text-lg font-semibold ">
+                <h2>Please Deposit</h2>
+                <input class="w-full my-5 p-1" type="number" name="" id="deposit-input"
+                    placeholder="Deposit more than $50">
+                <button id="deposit-button"
+                    class="bg-blue-700 hover:bg-blue-600 px-5 py-2 rounded-md text-blue-50">Deposit</button>
+            </div>
+            <div class="bg-blue-300 p-5 rounded-lg text-center text-2xl md:text-lg font-semibold ">
+                <h2>Please Withdraw</h2>
+                <input class="w-full my-5 p-1" type="number" name="" id="withdraw-input"
+                    placeholder="Withdraw more than $50">
+                <button id="withdraw-button"
+                    class="bg-blue-700 hover:bg-blue-600 px-5 py-2 rounded-md text-blue-50">Deposit</button>
+            </div>
+        </div>
+    </section>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
