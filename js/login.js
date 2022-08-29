@@ -4,7 +4,7 @@ document.getElementById('login-button').addEventListener('click', () => {
     const userEmailValue = userEmail.value;
     const userPasswordValue = userPassword.value;
 
-    if (userEmailValue === 'sneha@gmail.com' && userPasswordValue === '1234') {
+    if (userEmailValue === 'admin@email.com' && userPasswordValue === '1234') {
         window.location.href = 'dashboard.html';
     } else {
         alert('Wrong username or password!');
